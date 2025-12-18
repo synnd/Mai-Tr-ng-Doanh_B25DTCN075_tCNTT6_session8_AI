@@ -30,8 +30,19 @@ void menu();
 
 // --- HÀM MAIN ---
 int main() {
-    SinhVien ds[MAX_SV];
-    int n = 0; 
+    SinhVien ds[MAX_SV]={
+        {101, "Nguyen Van An", 20, 8.5},
+        {102, "Tran Thi Binh", 19, 7.2},
+        {103, "Le Van Cuong", 21, 6.5},
+        {104, "Pham Thi Dung", 20, 9.1},
+        {105, "Hoang Van Em", 22, 5.5},
+        {106, "Vu Thi Hoa", 19, 8.0},
+        {107, "Dang Van Giang", 21, 7.8},
+        {108, "Bui Thi Hanh", 20, 9.5},
+        {109, "Do Van Hung", 23, 4.5},
+        {110, "Ngo Thi Kim", 19, 6.8}
+};
+    int n = 10; 
     int choice;
 
     do {
@@ -264,3 +275,4 @@ void xoaSinhVien(SinhVien ds[], int *n) {
         printf("\n>> Da xoa ID %d\n", idCanXoa);
     }
 }
+
