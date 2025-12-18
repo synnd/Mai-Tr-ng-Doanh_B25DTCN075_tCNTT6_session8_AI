@@ -131,8 +131,8 @@ void themSinhVienCoKiemTra(SinhVien ds[], int *n) {
     }
 
     // Nhập GPA
-    printf("Nhap GPA (0-10): ");
-    while (scanf("%f", &svMoi.gpa) != 1 || svMoi.gpa < 0 || svMoi.gpa > 10) {
+    printf("Nhap GPA (0-4): ");
+    while (scanf("%f", &svMoi.gpa) != 1 || svMoi.gpa < 0 || svMoi.gpa > 4) {
         printf(">> GPA khong hop le. Nhap lai: ");
         while(getchar() != '\n');
     }
@@ -231,8 +231,7 @@ void tinhGPATrungBinh(SinhVien ds[], int n) {
 
 void sapXepTheoGPA(SinhVien ds[], int n) {
     for (int i = 0; i < n - 1; i++) {
-        for (int j = 0; j < n - i - 1; j++) {3
-            
+        for (int j = 0; j < n - i - 1; j++) {
             if (ds[j].gpa < ds[j + 1].gpa) {
                 SinhVien temp = ds[j];
                 ds[j] = ds[j + 1];
