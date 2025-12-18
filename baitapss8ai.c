@@ -74,7 +74,7 @@ int main() {
 // --- CÁC HÀM CHI TIẾT ---
 
 void menu() {
-    printf("\n===== MENU QUAN LY SINH VIEN (CO TUOI) =====\n");
+    printf("\n===== MENU QUAN LY SINH VIEN =====\n");
     printf("1. Them sinh vien\n");
     printf("2. In danh sach sinh vien\n");
     printf("3. Luu danh sach vao file\n");
@@ -275,4 +275,5 @@ void xoaSinhVien(SinhVien ds[], int *n) {
         printf("\n>> Da xoa ID %d\n", idCanXoa);
     }
 }
+
 
